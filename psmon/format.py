@@ -1,8 +1,26 @@
-"""数值格式化工具：字节容量、速率、时长。"""
+"""数值格式化工具：字节容量、速率、时长、进程状态。"""
 
 from __future__ import annotations
 
 _UNITS = ("B", "KB", "MB", "GB", "TB", "PB")
+
+#: psutil 的进程状态代码 -> 任务管理器风格的中文描述
+_PROCESS_STATUS = {
+    "running": "正在运行",
+    "sleeping": "已挂起",
+    "disk-sleep": "磁盘等待",
+    "stopped": "已停止",
+    "tracing-stop": "跟踪停止",
+    "zombie": "僵尸进程",
+    "dead": "已结束",
+    "wake-kill": "唤醒终止",
+    "wakeup": "唤醒等待",
+    "idle": "空闲",
+    "locked": "锁定",
+    "waiting": "等待",
+    "suspended": "已挂起",
+    "parked": "驻留",
+}
 
 
 def format_bytes(num: float, per_second: bool = False) -> str:
@@ -57,3 +75,21 @@ def format_duration(seconds: float) -> str:
     if hours:
         return f"{hours:02d}:{minutes:02d}:{secs:02d}"
     return f"{minutes:02d}:{secs:02d}"
+
+
+def format_uptime(seconds: float) -> str:
+    """运行时长，采用任务管理器的 ``天:时:分:秒`` 写法，例如 ``3:12:05:40``。"""
+    total = int(max(0.0, float(seconds)))
+    days, remainder = divmod(total, 86400)
+    hours, remainder = divmod(remainder, 3600)
+    minutes, secs = divmod(remainder, 60)
+    if days:
+        return f"{days}:{hours:02d}:{minutes:02d}:{secs:02d}"
+    return f"{hours}:{minutes:02d}:{secs:02d}"
+
+
+def format_process_status(status: str) -> str:
+    """把 psutil 的英文进程状态转换为中文描述。"""
+    if not status:
+        return "未知"
+    return _PROCESS_STATUS.get(status, status)

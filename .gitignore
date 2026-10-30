@@ -1,0 +1,15 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# 打包产物
+*.zip
+dist/
+build/
+
+# 编辑器
+.idea/
+.vscode/
+*.swp

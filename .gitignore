@@ -13,3 +13,7 @@ build/
 .idea/
 .vscode/
 *.swp
+
+# 渲染/检查用临时文件
+.dsh-office*/
+report_utf8.txt

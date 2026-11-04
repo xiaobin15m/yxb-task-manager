@@ -1,0 +1,9 @@
+封面仓库行: 已简化为纯网址
+8.2 提示段: 已改为已完成状态
+Word: 修改 1 个段落
+压缩包: 19 个文件, 279453 字节
+docx 残留占位符: 5
+md 残留占位符: 0
+README 残留占位符: 0
+docx 含用户名: 2
+封面仓库行: https://github.com/xiaobin15m/yxb-task-manager

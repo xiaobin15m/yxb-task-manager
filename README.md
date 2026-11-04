@@ -80,9 +80,11 @@ python -m unittest discover -s tests -v
 
 ## 代码仓库
 
-- Gitee：`https://gitee.com/<你的账号>/psmon-system-monitor`（提交前请替换为实际地址）
-- GitHub：`https://github.com/<你的账号>/psmon-system-monitor`（可选镜像）
+GitHub：`https://github.com/<你的账号>/psmon-system-monitor`
+
+> 提交前请把 `<你的账号>` 替换为实际 GitHub 用户名，并同步更新 `docs/系统说明文档.md` 封面与第 8 章。
 
 ## 许可
 
 本项目为课程实验作品，仅供学习使用。
+x

@@ -58,7 +58,8 @@ Linux 若提示缺少 tkinter，请安装系统包，例如 `sudo apt install py
 │       └── processes.py       # “进程”页
 ├── tests/test_psmon.py        # 单元测试
 ├── docs/
-│   ├── 系统说明文档.md          # 完整系统文档（含用户操作手册）
+│   ├── 系统说明文档.docx        # 系统文档 Word 版（提交用）
+│   ├── 系统说明文档.md          # 系统文档 Markdown 版（仓库内便于预览）
 │   └── images/
 │       ├── main-window.png
 │       └── processes.png
@@ -76,7 +77,8 @@ python -m unittest discover -s tests -v
 ## 系统文档
 
 完整的需求分析、AI 工具使用说明、技术框架、系统设计、实现功能与用户操作手册见
-[docs/系统说明文档.md](docs/系统说明文档.md)。
+[docs/系统说明文档.md](docs/系统说明文档.md)，排版后的 Word 版见
+[docs/系统说明文档.docx](docs/系统说明文档.docx)。
 
 ## 代码仓库
 
@@ -87,4 +89,3 @@ GitHub：`https://github.com/<你的账号>/psmon-system-monitor`
 ## 许可
 
 本项目为课程实验作品，仅供学习使用。
-x

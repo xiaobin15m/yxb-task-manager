@@ -1,4 +1,4 @@
-# PsMon 任务管理器
+# yxb的任务管理器
 
 仿 Windows 任务管理器界面的系统监控程序，基于 Python + `psutil` + `tkinter` 实现，实时展示 CPU、内存、磁盘 IO、磁盘分区、网络收发速率，并提供与任务管理器一致的“进程 / 性能”两个页面。除 `psutil` 外不依赖任何第三方库，图表与进程列表样式均由自行绘制与 `ttk` 主题配置完成。
 
@@ -46,7 +46,7 @@ Linux 若提示缺少 tkinter，请安装系统包，例如 `sudo apt install py
 ```
 .
 ├── main.py                    # 程序入口
-├── psmon/
+├── yxbtaskmgr/
 │   ├── __init__.py            # 版本信息
 │   ├── collector.py           # 主采样线程、进程采样线程、速率计算
 │   ├── format.py              # 容量/速率/时长/进程状态格式化
@@ -56,7 +56,7 @@ Linux 若提示缺少 tkinter，请安装系统包，例如 `sudo apt install py
 │       ├── widgets.py         # 面积图、迷你趋势图、核心网格、进程表等控件
 │       ├── performance.py     # “性能”页
 │       └── processes.py       # “进程”页
-├── tests/test_psmon.py        # 单元测试
+├── tests/test_yxbtaskmgr.py        # 单元测试
 ├── docs/
 │   ├── 系统说明文档.docx        # 系统文档 Word 版（提交用）
 │   ├── 系统说明文档.md          # 系统文档 Markdown 版（仓库内便于预览）
@@ -82,7 +82,7 @@ python -m unittest discover -s tests -v
 
 ## 代码仓库
 
-GitHub：`https://github.com/<你的账号>/psmon-system-monitor`
+GitHub：`https://github.com/<你的账号>/yxb-task-manager`
 
 > 提交前请把 `<你的账号>` 替换为实际 GitHub 用户名，并同步更新 `docs/系统说明文档.md` 封面与第 8 章。
 

@@ -7,10 +7,10 @@ from typing import Dict, List, Sequence, Tuple
 
 import psutil
 
-from psmon.collector import PartitionUsage, Snapshot
-from psmon.format import format_bytes, format_rate, format_uptime
-from psmon.ui import theme
-from psmon.ui.widgets import (
+from yxbtaskmgr.collector import PartitionUsage, Snapshot
+from yxbtaskmgr.format import format_bytes, format_rate, format_uptime
+from yxbtaskmgr.ui import theme
+from yxbtaskmgr.ui.widgets import (
     AdapterRow,
     AreaChart,
     BarRow,

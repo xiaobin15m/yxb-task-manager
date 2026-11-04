@@ -197,7 +197,7 @@ class ProcessSampler(threading.Thread):
         interval: float = 3.0,
         limit: int = 80,
     ) -> None:
-        super().__init__(name="psmon-processes", daemon=True)
+        super().__init__(name="yxbtaskmgr-processes", daemon=True)
         self._stop_event = stop_event
         self._paused_event = paused_event
         self._interval = max(0.5, float(interval))
@@ -289,7 +289,7 @@ class SystemCollector(threading.Thread):
         process_interval: float = 3.0,
         process_limit: int = 80,
     ) -> None:
-        super().__init__(name="psmon-collector", daemon=True)
+        super().__init__(name="yxbtaskmgr-collector", daemon=True)
         self._interval = max(0.2, float(interval))
         self._partition_interval = max(self._interval, float(partition_interval))
         self._adapter_interval = max(self._interval, float(adapter_interval))

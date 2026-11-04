@@ -12,7 +12,7 @@ from typing import Callable, Dict, Iterable, List, Optional, Sequence, Tuple
 import tkinter as tk
 from tkinter import ttk
 
-from psmon.ui import theme
+from yxbtaskmgr.ui import theme
 
 
 def _nice_ceil(value: float) -> float:

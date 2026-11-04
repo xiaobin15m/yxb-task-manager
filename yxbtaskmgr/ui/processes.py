@@ -5,10 +5,10 @@ from __future__ import annotations
 import tkinter as tk
 from typing import Sequence, Tuple
 
-from psmon.collector import ProcessEntry, Snapshot
-from psmon.format import format_bytes, format_process_status
-from psmon.ui import theme
-from psmon.ui.widgets import ProcessTable
+from yxbtaskmgr.collector import ProcessEntry, Snapshot
+from yxbtaskmgr.format import format_bytes, format_process_status
+from yxbtaskmgr.ui import theme
+from yxbtaskmgr.ui.widgets import ProcessTable
 
 COLUMNS: Sequence[Tuple[str, str, int, str]] = (
     ("name", "名称", 300, "w"),

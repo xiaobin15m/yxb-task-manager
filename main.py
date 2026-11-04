@@ -1,10 +1,10 @@
-"""PsMon 系统监控 —— 程序入口。
+"""yxb的任务管理器 —— 程序入口。
 
 运行方式：
     python main.py
 """
 
-from psmon.ui.app import MonitorApp
+from yxbtaskmgr.ui.app import MonitorApp
 
 
 def main() -> None:

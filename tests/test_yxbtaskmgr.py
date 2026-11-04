@@ -12,8 +12,8 @@ import unittest
 
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
-from psmon.collector import SystemCollector  # noqa: E402
-from psmon.format import (  # noqa: E402
+from yxbtaskmgr.collector import SystemCollector  # noqa: E402
+from yxbtaskmgr.format import (  # noqa: E402
     format_axis_bytes,
     format_bytes,
     format_duration,

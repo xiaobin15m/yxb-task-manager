@@ -11,12 +11,12 @@ from typing import Dict, Optional, Sequence, Tuple
 
 import psutil
 
-from psmon import __version__
-from psmon.collector import Snapshot, SystemCollector
-from psmon.format import format_duration, format_rate
-from psmon.ui import theme
-from psmon.ui.performance import PerformancePage
-from psmon.ui.processes import ProcessPage
+from yxbtaskmgr import __version__
+from yxbtaskmgr.collector import Snapshot, SystemCollector
+from yxbtaskmgr.format import format_duration, format_rate
+from yxbtaskmgr.ui import theme
+from yxbtaskmgr.ui.performance import PerformancePage
+from yxbtaskmgr.ui.processes import ProcessPage
 
 #: 采样间隔选项：(显示文本, 秒)
 INTERVAL_OPTIONS: Sequence[Tuple[str, float]] = (
@@ -59,7 +59,7 @@ class MonitorApp:
     def __init__(self) -> None:
         _enable_dpi_awareness()
         self.root = tk.Tk()
-        self.root.title(f"PsMon 任务管理器  v{__version__}")
+        self.root.title(f"yxb的任务管理器  v{__version__}")
         self.root.configure(bg=theme.BG)
 
         # 窗口尺寸随屏幕自适应，避免在低分辨率屏幕上被裁切

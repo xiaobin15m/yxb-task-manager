@@ -82,9 +82,8 @@ python -m unittest discover -s tests -v
 
 ## 代码仓库
 
-GitHub：`https://github.com/<你的账号>/yxb-task-manager`
+GitHub：`https://github.com/xiaobin15m/yxb-task-manager`
 
-> 提交前请把 `<你的账号>` 替换为实际 GitHub 用户名，并同步更新 `docs/系统说明文档.md` 封面与第 8 章。
 
 ## 许可
 

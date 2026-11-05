@@ -56,7 +56,7 @@ Linux 若提示缺少 tkinter，请安装系统包，例如 `sudo apt install py
 │       ├── widgets.py         # 面积图、迷你趋势图、核心网格、进程表等控件
 │       ├── performance.py     # “性能”页
 │       └── processes.py       # “进程”页
-├── tests/test_yxbtaskmgr.py        # 单元测试
+├── tests/test_yxbtaskmgr.py     # 单元测试
 ├── docs/
 │   ├── 系统说明文档.docx        # 系统文档 Word 版（提交用）
 │   ├── 系统说明文档.md          # 系统文档 Markdown 版（仓库内便于预览）
@@ -76,14 +76,13 @@ python -m unittest discover -s tests -v
 
 ## 系统文档
 
-完整的需求分析、AI 工具使用说明、技术框架、系统设计、实现功能与用户操作手册见
+完整的项目概述、AI 工具使用说明、技术框架、系统设计、实现功能与用户操作手册见
 [docs/系统说明文档.md](docs/系统说明文档.md)，排版后的 Word 版见
 [docs/系统说明文档.docx](docs/系统说明文档.docx)。
 
 ## 代码仓库
 
 GitHub：`https://github.com/xiaobin15m/yxb-task-manager`
-
 
 ## 许可
 

@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "backend": "native",
+  "rasterEngine": "libreoffice",
+  "source": "saved",
+  "inputPath": "D:\\Aa铁大课程\\网络编程python\\2026.10.30实验一\\docs\\系统说明文档.docx",
+  "sourceSha256": "cc70a10d5fdd5b2b307e2edac982de2b6bc73ce06cf30c8678ee469f223342c1",
+  "dpi": 144,
+  "pageCount": 28,
+  "images": [
+    {
+      "index": 1,
+      "page": 2,
+      "path": "D:\\Aa铁大课程\\网络编程python\\2026.10.30实验一\\.preview\\render\\page-0001.png",
+      "width": 1191,
+      "height": 1684,
+      "rectangle": {
+        "x": 0,
+        "y": 0,
+        "width": 793.7333333333333,
+        "height": 1122.5333333333333
+      },
+      "byteLength": 117594
+    },
+    {
+      "index": 2,
+      "page": 9,
+      "path": "D:\\Aa铁大课程\\网络编程python\\2026.10.30实验一\\.preview\\render\\page-0002.png",
+      "width": 1191,
+      "height": 1684,
+      "rectangle": {
+        "x": 0,
+        "y": 0,
+        "width": 793.7333333333333,
+        "height": 1122.5333333333333
+      },
+      "byteLength": 231195
+    },
+    {
+      "index": 3,
+      "page": 12,
+      "path": "D:\\Aa铁大课程\\网络编程python\\2026.10.30实验一\\.preview\\render\\page-0003.png",
+      "width": 1191,
+      "height": 1684,
+      "rectangle": {
+        "x": 0,
+        "y": 0,
+        "width": 793.7333333333333,
+        "height": 1122.5333333333333
+      },
+      "byteLength": 216180
+    },
+    {
+      "index": 4,
+      "page": 24,
+      "path": "D:\\Aa铁大课程\\网络编程python\\2026.10.30实验一\\.preview\\render\\page-0004.png",
+      "width": 1191,
+      "height": 1684,
+      "rectangle": {
+        "x": 0,
+        "y": 0,
+        "width": 793.7333333333333,
+        "height": 1122.5333333333333
+      },
+      "byteLength": 170206
+    }
+  ],
+  "missingFonts": [
+    "Courier"
+  ]
+}
